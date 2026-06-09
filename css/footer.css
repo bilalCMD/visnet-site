@@ -1,0 +1,77 @@
+/* =====================================================
+   VIS Networks — Footer styles (separate file)
+   ===================================================== */
+
+.site-footer {
+  background: var(--bg-dark);
+  color: #c7c8d4;
+  padding: 72px 0 28px;
+}
+.footer-inner {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+}
+.footer-brand img { height: 42px; margin-bottom: 18px; filter: brightness(0) invert(1); }
+.footer-logo { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 18px; }
+.footer-logo-name { font-family: 'Space Grotesk','Poppins',sans-serif; font-weight: 700; font-size: 1.2rem; color: #fff; }
+.footer-brand p { font-size: .92rem; color: #9a9bac; max-width: 300px; }
+.footer-parent strong { color: #fff; }
+.footer-social { display: flex; gap: 12px; margin-top: 20px; }
+.footer-social a {
+  width: 40px; height: 40px;
+  display: grid; place-items: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,.06);
+  transition: background .2s ease, transform .2s ease;
+}
+.footer-social a { color: rgba(255,255,255,.85); }
+.footer-social a:hover { background: var(--red); transform: translateY(-3px); color: #fff; }
+.footer-social svg { width: 19px; height: 19px; display: block; }
+
+.footer-col h4 {
+  color: #fff;
+  font-size: .82rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.footer-col ul li { margin-bottom: 11px; }
+.footer-col ul li a {
+  font-size: .92rem;
+  color: #9a9bac;
+  transition: color .2s ease, padding-left .2s ease;
+}
+.footer-col ul li a:hover { color: #fff; padding-left: 4px; }
+
+.footer-contact li { display: flex; gap: 10px; margin-bottom: 14px; font-size: .9rem; color: #9a9bac; }
+.footer-contact li .ico { color: var(--red); flex: none; }
+.footer-contact a:hover { color: #fff; }
+
+.footer-bottom {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 24px 24px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: .85rem;
+  color: #7d7e90;
+}
+.footer-bottom a:hover { color: #fff; }
+
+@media (max-width: 900px) {
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+}
+@media (max-width: 540px) {
+  .footer-top { grid-template-columns: 1fr; }
+}

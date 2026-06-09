@@ -1,0 +1,11 @@
+# OS / editor junk
+Thumbs.db
+.DS_Store
+*~
+
+# Backups & scratch
+*.bak
+_*.bak
+
+# Local tooling
+__pycache__/

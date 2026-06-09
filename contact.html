@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact VIS Networks — Let's Connect</title>
+  <meta name="description" content="Get in touch with VIS Networks. Call +91 80 4545 3355, email salesenquiry@visnet.in, or visit our Bengaluru HQ.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20">
+  <link rel="stylesheet" href="css/header.css?v=20">
+  <link rel="stylesheet" href="css/footer.css?v=20">
+  <link rel="stylesheet" href="css/contact.css?v=20">
+</head>
+<body data-page="contact">
+
+  <div data-include="header"></div>
+
+  <section class="page-hero">
+    <canvas class="hero-canvas" data-tone="dark" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="breadcrumb"><a href="/">Home</a> / Contact</div>
+      <h1>Let's Connect!</h1>
+      <p>Ready to take your business to the next level? Reach out and our team will get back to you shortly.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contact-wrap">
+
+      <!-- Info -->
+      <div class="contact-info reveal">
+        <span class="eyebrow">Get in Touch</span>
+        <h2 class="section-title" style="margin-bottom:8px;">We'd love to <span class="accent">hear from you</span></h2>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <div><h4>Call Us</h4><a href="tel:+918045453355">+91 80 4545 3355</a></div>
+        </div>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+          <div><h4>Email Us</h4><a href="mailto:salesenquiry@visnet.in">salesenquiry@visnet.in</a></div>
+        </div>
+        <div class="info-item">
+          <div class="ic">⚲</div>
+          <div><h4>Headquarters</h4><p>#94, 4th Cross Rd, Sidharata Colony, Santhosapuram, 2nd Block, Koramangala, Bengaluru, Karnataka 560034</p></div>
+        </div>
+        <div class="info-item">
+          <div class="ic"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <div><h4>Global Offices</h4><p>India · USA · UK · UAE · Oman · Singapore · Malaysia · Philippines · Australia · Saudi Arabia</p></div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form reveal">
+        <div class="form-success" id="formSuccess">✅ Thank you! Your message has been recorded. We'll be in touch soon.</div>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full Name *</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 ...">
+            </div>
+          </div>
+          <div class="field">
+            <label for="state">State / Country</label>
+            <input type="text" id="state" name="state" placeholder="Enter state name">
+          </div>
+          <div class="field">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option>Collaboration &amp; CX Management</option>
+              <option>Network &amp; Security</option>
+              <option>Audio &amp; Video Integrations</option>
+              <option>Automation</option>
+              <option>Managed Services</option>
+              <option>Products (RADIUS / DiGON / Cube)</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-arrow">Submit</button>
+          <p class="form-note">This is a static demo form — submissions are validated and shown locally, not sent to a server.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="map-embed reveal">
+        <iframe
+          src="https://www.google.com/maps?q=VIS+Networks+Koramangala+Bangalore&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="VIS Networks HQ map"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <div data-include="footer"></div>
+
+  <script src="partials/header.js?v=20"></script>
+  <script src="partials/footer.js?v=20"></script>
+  <script src="js/main.js?v=20"></script>
+  <script src="js/hero-bg.js?v=20"></script>
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      document.getElementById('formSuccess').classList.add('show');
+      form.reset();
+      document.getElementById('formSuccess').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+  </script>
+</body>
+</html>

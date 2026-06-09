@@ -1,0 +1,152 @@
+/* =====================================================
+   Products page — premium showcase
+   ===================================================== */
+
+/* quick nav pills under hero */
+.prod-nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+.prod-nav a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 9px 18px; border-radius: 999px;
+  background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18);
+  color: #fff; font-size: .88rem; font-weight: 500;
+  transition: background .2s ease, transform .2s ease;
+}
+.prod-nav a:hover { background: rgba(255,255,255,.18); transform: translateY(-2px); }
+.prod-nav a .d { width: 8px; height: 8px; border-radius: 50%; }
+.prod-nav a .d.r { background: #ff5470; }
+.prod-nav a .d.i { background: #7c8cff; }
+.prod-nav a .d.p { background: #c77dff; }
+
+/* showcase row */
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: stretch;          /* equal-height columns */
+  padding: 60px 0;
+  border-top: 1px solid var(--line);
+}
+.section > .container > .product:first-child { border-top: 0; padding-top: 12px; }
+.product:nth-child(odd) .product-art { order: 2; }   /* alternate sides */
+
+/* content column — vertically centred against the panel */
+.product-body { display: flex; flex-direction: column; justify-content: center; }
+
+/* ---- branded panel ---- */
+.product-art {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  padding: 38px 36px;
+  min-height: 360px;
+  height: 100%;                  /* fill the row height (matches content) */
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+}
+.product-art.radius { background: linear-gradient(150deg, #ff3b5c 0%, #d90429 55%, #7a0316 100%); }
+.product-art.digon  { background: linear-gradient(150deg, #2b2f63 0%, #181a35 55%, #0e0f22 100%); }
+.product-art.cube   { background: linear-gradient(150deg, #5a2a8c 0%, #34134f 55%, #1a0b29 100%); }
+/* subtle grid + glow */
+.product-art::before {
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+  background-size: 38px 38px;
+  -webkit-mask: radial-gradient(circle at 70% 20%, #000, transparent 75%);
+          mask: radial-gradient(circle at 70% 20%, #000, transparent 75%);
+}
+.product-art::after {
+  content: ""; position: absolute; top: -80px; right: -80px;
+  width: 260px; height: 260px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.22), transparent 70%);
+}
+
+.pa-num {
+  position: relative; z-index: 1;
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: .82rem; letter-spacing: .16em; opacity: .7;
+}
+.pa-center {
+  position: relative; z-index: 1;
+  flex: 1; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 12px; text-align: center;
+}
+.pa-center .plogo { height: 50px; width: auto; max-width: 70%; object-fit: contain; }
+.pa-center .pcube { height: 78px; width: auto; object-fit: contain; }
+.plogo--invert { filter: brightness(0) invert(1); }
+.pa-center .pword {
+  font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+  font-size: 2.9rem; letter-spacing: -.02em; line-height: 1;
+}
+.pa-center .pword span { color: #8d9bff; }
+.pa-center .pword--sm { font-size: 1.7rem; }
+.pa-center .kicker {
+  font-size: .76rem; letter-spacing: .16em; text-transform: uppercase;
+  opacity: .85; font-weight: 600;
+}
+.pa-chips {
+  position: relative; z-index: 1;
+  display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+}
+.pa-chips span {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  padding: 6px 13px; border-radius: 999px;
+  font-size: .74rem; font-weight: 500; backdrop-filter: blur(4px);
+}
+
+/* ---- product copy ---- */
+.product-body .pill {
+  display: inline-block; font-size: .72rem; font-weight: 700; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--red); background: var(--red-soft);
+  padding: 6px 14px; border-radius: 999px; margin-bottom: 14px;
+}
+.product-body h2 {
+  font-family: 'Space Grotesk', 'Poppins', sans-serif;
+  font-size: 2rem; margin-bottom: 12px; letter-spacing: -.02em;
+}
+.product-body > p { color: var(--muted); margin-bottom: 22px; font-size: 1.02rem; line-height: 1.7; }
+
+.feat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 28px; }
+.feat-grid .f {
+  display: flex; gap: 11px; align-items: flex-start;
+  background: var(--bg-soft); border: 1px solid var(--line);
+  border-radius: 12px; padding: 13px 15px;
+  font-size: .9rem; color: var(--ink-soft);
+  transition: border-color .2s ease, transform .2s ease;
+}
+.feat-grid .f:hover { border-color: var(--red); transform: translateY(-2px); }
+.feat-grid .f .ck {
+  flex: none; width: 20px; height: 20px; border-radius: 6px;
+  background: var(--red); color: #fff; display: grid; place-items: center;
+  font-size: .7rem; margin-top: 1px;
+}
+.feat-grid .f strong { font-weight: 600; }
+
+.product-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+@media (max-width: 920px) {
+  .product { grid-template-columns: 1fr; gap: 28px; padding: 40px 0; }
+  .product:nth-child(odd) .product-art { order: 0; }   /* panel always on top */
+  .product-art { min-height: 260px; height: auto; padding: 30px 26px; }
+  .product-body { justify-content: flex-start; }
+}
+@media (max-width: 640px) {
+  .feat-grid { grid-template-columns: 1fr; gap: 10px; }
+  .product-body h2 { font-size: 1.7rem; }
+  .product-art { min-height: 230px; border-radius: 22px; }
+  .pa-center .plogo { height: 42px; }
+  .pa-center .pcube { height: 64px; }
+  .pa-center .pword { font-size: 2.2rem; }
+  .pa-center .pword--sm { font-size: 1.5rem; }
+  .pa-chips span { font-size: .7rem; padding: 5px 11px; }
+}
+@media (max-width: 460px) {
+  .product-actions { flex-direction: column; }
+  .product-actions .btn { width: 100%; justify-content: center; }
+  .prod-nav { gap: 8px; }
+  .prod-nav a { font-size: .82rem; padding: 8px 14px; }
+}

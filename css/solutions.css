@@ -1,0 +1,47 @@
+/* ===== Solutions page specific styles ===== */
+
+.sol-row {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 26px 0;
+}
+.sol-row:nth-child(even) .sol-visual { order: 2; }
+.sol-row--flip .sol-visual { order: 2; }
+.sol-sub { margin-top: 44px; }
+.sol-visual {
+  background: linear-gradient(135deg, #14142b, #3a0d1a);
+  border-radius: var(--radius);
+  padding: 40px;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-lg);
+}
+.sol-visual img { height: 200px; object-fit: contain; }
+.sol-row h2 { font-size: 1.7rem; margin-bottom: 14px; }
+.sol-row .num-chip {
+  display: inline-block;
+  font-size: .78rem; font-weight: 600; letter-spacing: .12em;
+  color: var(--red); text-transform: uppercase; margin-bottom: 10px;
+}
+.sol-row p { color: var(--muted); }
+
+.sub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.sub-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, border-color .2s ease;
+}
+.sub-card:hover { transform: translateY(-5px); border-color: var(--red); }
+.sub-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+.sub-card p { font-size: .9rem; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .sol-row { grid-template-columns: 1fr; }
+  .sol-row:nth-child(even) .sol-visual { order: 0; }
+  .sub-grid { grid-template-columns: 1fr; }
+}
