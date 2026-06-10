@@ -34,6 +34,7 @@ window.VIS_HEADER = /* html */ `
           <a href="ai-engage">AI Engage <small>Autonomous query resolution</small></a>
           <a href="ai-assist">AI Assist <small>Real-time agent guidance</small></a>
           <a href="ai-insight">AI Insight <small>Behavioral CX intelligence</small></a>
+          <a href="products">Products <small>RADIUS · DiGON · Cube</small></a>
           <a href="solutions">Solutions <small>Full solution portfolio</small></a>
         </div>
       </li>
