@@ -10,7 +10,7 @@ window.VIS_HEADER = /* html */ `
   <div class="topbar">
     <div class="topbar-inner">
       <span class="tb-left">
-        <a class="braiin-mark" href="https://braiin.com/" target="_blank" rel="noopener" aria-label="Braiin Limited">braiin</a>
+        <a class="braiin-mark" href="https://braiin.com/" target="_blank" rel="noopener" aria-label="Braiin Limited"><img src="images/braiin-favicon.webp" alt="Braiin"></a>
         <span class="tb-sub">A subsidiary of <strong>Braiin Limited</strong> · Nasdaq: <strong>BRAI</strong></span>
       </span>
       <span class="tb-right">
