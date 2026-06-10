@@ -9,12 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=28">
-  <link rel="stylesheet" href="css/header.css?v=28">
-  <link rel="stylesheet" href="css/footer.css?v=28">
-  <link rel="stylesheet" href="css/contact.css?v=28">
-  <link rel="stylesheet" href="css/service-detail.css?v=28">
-  <link rel="stylesheet" href="css/agentic.css?v=28">
+  <link rel="stylesheet" href="css/style.css?v=29">
+  <link rel="stylesheet" href="css/header.css?v=29">
+  <link rel="stylesheet" href="css/footer.css?v=29">
+  <link rel="stylesheet" href="css/contact.css?v=29">
+  <link rel="stylesheet" href="css/service-detail.css?v=29">
+  <link rel="stylesheet" href="css/agentic.css?v=29">
 </head>
 <body data-page="radius">
 
@@ -35,35 +35,40 @@
     </div>
   </section>
 
-  <!-- Demo + Apply -->
+  <!-- Video + what's included -->
   <section class="section">
-    <div class="container watch-grid">
-
-      <!-- Left: demo preview + what's included -->
+    <div class="container watch-top">
       <div class="reveal">
         <div class="watch-demo">
           <iframe src="https://www.youtube.com/embed/GtHt_KGzjWY" title="RADIUS — Agentic AI Contact Center platform walkthrough" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <p class="watch-cap">▶ Official RADIUS platform walkthrough</p>
-
-        <div class="watch-includes">
-          <h3>Everything you'll see in the demo</h3>
-          <ul class="feature-list">
-            <li><strong>Autonomous resolution</strong> live across Voice, Chat, Email, Video &amp; Social.</li>
-            <li><strong>AI Engage, AI Assist &amp; AI Insight</strong> working together in real time.</li>
-            <li><strong>Flamingo AI</strong> — patented self-learning ML with zero cold-start.</li>
-            <li><strong>One-stop-shop delivery</strong> — from design to fully managed operations.</li>
-            <li><strong>CRM integration (DiGON)</strong> &amp; emergency response (Cube).</li>
-            <li><strong>Live CSAT, sentiment &amp; analytics</strong> dashboards.</li>
-            <li><strong>Cloud-native deployment</strong> — no hardware, live in days.</li>
-          </ul>
-        </div>
       </div>
 
-      <!-- Right: application / demo request form -->
-      <div class="contact-form reveal">
-        <h2 class="section-title" style="font-size:1.5rem;margin-bottom:6px;">Apply for a <span class="accent">personalised demo</span></h2>
-        <p style="color:var(--muted);margin-bottom:20px;font-size:.95rem;">Tell us a little about you and what you'd like to see — we'll tailor the walkthrough to your use case.</p>
+      <div class="watch-includes reveal">
+        <h3>Everything you'll see in the demo</h3>
+        <ul class="feature-list">
+          <li><strong>Autonomous resolution</strong> live across Voice, Chat, Email, Video &amp; Social.</li>
+          <li><strong>AI Engage, AI Assist &amp; AI Insight</strong> working together in real time.</li>
+          <li><strong>Flamingo AI</strong> — patented self-learning ML with zero cold-start.</li>
+          <li><strong>One-stop-shop delivery</strong> — from design to fully managed operations.</li>
+          <li><strong>CRM integration (DiGON)</strong> &amp; emergency response (Cube).</li>
+          <li><strong>Live CSAT, sentiment &amp; analytics</strong> dashboards.</li>
+          <li><strong>Cloud-native deployment</strong> — no hardware, live in days.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apply form -->
+  <section class="section bg-soft">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">Apply</span>
+        <h2 class="section-title">Apply for a <span class="accent">personalised demo</span></h2>
+        <p>Tell us a little about you and what you'd like to see — we'll tailor the walkthrough to your use case.</p>
+      </div>
+      <div class="watch-form-wrap reveal">
         <div class="form-success" id="formSuccess">✅ Thank you! Your demo request has been recorded. Our team will reach out shortly to schedule your walkthrough.</div>
         <form id="watchForm" novalidate>
           <div class="form-row">
@@ -174,7 +179,7 @@
   </section>
 
   <!-- Inside the platform (everything available) -->
-  <section class="section bg-soft">
+  <section class="section">
     <div class="container">
       <div class="section-head center reveal">
         <span class="eyebrow">Inside the Platform</span>
@@ -207,10 +212,10 @@
 
   <div data-include="footer"></div>
 
-  <script src="partials/header.js?v=28"></script>
-  <script src="partials/footer.js?v=28"></script>
-  <script src="js/main.js?v=28"></script>
-  <script src="js/hero-bg.js?v=28"></script>
+  <script src="partials/header.js?v=29"></script>
+  <script src="partials/footer.js?v=29"></script>
+  <script src="js/main.js?v=29"></script>
+  <script src="js/hero-bg.js?v=29"></script>
   <script>
     const wf = document.getElementById('watchForm');
     wf.addEventListener('submit', (e) => {

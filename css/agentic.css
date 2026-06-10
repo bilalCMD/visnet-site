@@ -410,15 +410,22 @@
 .lead-role { display: inline-block; margin-top: 7px; color: var(--red); font-weight: 600; font-size: .85rem; letter-spacing: .02em; }
 
 /* ---------- WATCH THE PLATFORM ---------- */
-.watch-grid { display: grid; grid-template-columns: 1.08fr .92fr; gap: 56px; align-items: start; }
+.watch-top { display: grid; grid-template-columns: 1.25fr .75fr; gap: 48px; align-items: start; }
 .watch-demo {
   position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 16 / 9;
   background: #000; box-shadow: var(--shadow-lg); border: 1px solid var(--line);
 }
 .watch-demo iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; display: block; }
 .watch-cap { margin-top: 14px; color: var(--muted); font-size: .88rem; font-weight: 500; }
-.watch-includes { margin-top: 34px; }
+.watch-includes { margin-top: 0; }
 .watch-includes h3 { font-size: 1.25rem; margin-bottom: 14px; }
+
+/* centered, spacious application form */
+.watch-form-wrap {
+  max-width: 840px; margin: 0 auto;
+  background: #fff; border: 1px solid var(--line); border-radius: 24px;
+  padding: 40px 44px; box-shadow: var(--shadow);
+}
 
 .check-group { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; }
 .chk {
@@ -430,7 +437,10 @@
 .chk:hover { border-color: var(--red); }
 .chk input:checked + span { color: var(--red); font-weight: 600; }
 
-@media (max-width: 980px) { .watch-grid { grid-template-columns: 1fr; gap: 36px; } }
+@media (max-width: 980px) {
+  .watch-top { grid-template-columns: 1fr; gap: 32px; }
+  .watch-form-wrap { padding: 30px 22px; }
+}
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1000px) {
