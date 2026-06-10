@@ -104,9 +104,14 @@
 /* ---------- TRUST BAR ---------- */
 .ai-trustbar { padding: 40px 0; border-bottom: 1px solid var(--line); background: var(--bg); }
 .ai-trustbar p { text-align: center; color: var(--muted); font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 22px; }
-.ai-logos { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 40px; }
-.ai-logos span { font-family: 'Space Grotesk',sans-serif; font-weight: 700; font-size: 1.25rem; color: #9aa0b3; letter-spacing: .02em; transition: color .2s ease; }
-.ai-logos span:hover { color: var(--ink); }
+.ai-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 22px 44px; }
+.ai-logos img {
+  height: 30px; width: auto; object-fit: contain;
+  filter: grayscale(1); opacity: .68;
+  transition: filter .25s ease, opacity .25s ease, transform .25s ease;
+}
+.ai-logos img:hover { filter: none; opacity: 1; transform: translateY(-2px); }
+@media (max-width: 600px) { .ai-logos { gap: 18px 28px; } .ai-logos img { height: 24px; } }
 
 /* ---------- generic check list (red) ---------- */
 .check-list { display: grid; gap: 12px; margin-top: 24px; }
