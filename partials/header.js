@@ -9,11 +9,13 @@ window.VIS_HEADER = /* html */ `
 <header class="site-header" id="siteHeader">
   <div class="topbar">
     <div class="topbar-inner">
-      <span class="tb-left">A subsidiary of <a href="https://braiin.com/" target="_blank" rel="noopener"><strong>Braiin Limited</strong></a> · Nasdaq Listed — <strong>BRAI</strong></span>
+      <span class="tb-left">
+        <a class="braiin-mark" href="https://braiin.com/" target="_blank" rel="noopener" aria-label="Braiin Limited">braiin</a>
+        <span class="tb-sub">A subsidiary of <strong>Braiin Limited</strong> · Nasdaq: <strong>BRAI</strong></span>
+      </span>
       <span class="tb-right">
-        <a href="contact">Support</a>
-        <a href="contact">Partner Login</a>
-        <span class="tb-loc">📍 India · Australia · UAE · Saudi Arabia</span>
+        <a href="contact">Contact Us</a>
+        <span class="tb-loc"><svg class="tb-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>India · Australia · UAE · Saudi Arabia</span>
       </span>
     </div>
   </div>
@@ -28,19 +30,27 @@ window.VIS_HEADER = /* html */ `
 
     <ul class="nav-menu" id="navMenu">
       <li class="nav-dropdown">
-        <a class="nav-link" data-nav="radius" href="radius">Agentic AI <span class="caret">&#9662;</span></a>
+        <a class="nav-link" data-nav="radius" href="radius">CX Agentic AI <span class="caret">&#9662;</span></a>
         <div class="dropdown-menu">
           <a href="radius">Radius Platform <small>Proprietary Agentic AI engine</small></a>
-          <a href="ai-engage">AI Engage <small>Autonomous query resolution</small></a>
-          <a href="ai-assist">AI Assist <small>Real-time agent guidance</small></a>
-          <a href="ai-insight">AI Insight <small>Behavioral CX intelligence</small></a>
-          <a href="products">Products <small>RADIUS · DiGON · Cube</small></a>
-          <a href="solutions">Solutions <small>Full solution portfolio</small></a>
+          <div class="dd-group">
+            <span class="dd-label">Our Core AI Agents</span>
+            <a href="ai-engage">AI Engage <small>Autonomous query resolution</small></a>
+            <a href="ai-assist">AI Assist <small>Real-time agent guidance</small></a>
+            <a href="ai-insight">AI Insights <small>Behavioral CX intelligence</small></a>
+          </div>
         </div>
       </li>
-      <li><a class="nav-link" data-nav="proprietary" href="flamingo">Proprietary Software</a></li>
+      <li><a class="nav-link" data-nav="proprietary" href="flamingo">Patented AI Technology</a></li>
       <li class="nav-dropdown">
-        <a class="nav-link" data-nav="services" href="services">Services <span class="caret">&#9662;</span></a>
+        <a class="nav-link" data-nav="products" href="products">Products <span class="caret">&#9662;</span></a>
+        <div class="dropdown-menu">
+          <a href="products#digon">DiGON <small>CRM integration</small></a>
+          <a href="products#cube">Cube <small>Emergency response system</small></a>
+        </div>
+      </li>
+      <li class="nav-dropdown">
+        <a class="nav-link" data-nav="services" href="services">Other Services <span class="caret">&#9662;</span></a>
         <div class="dropdown-menu">
           <a href="service-collaboration">Collaboration &amp; CX <small>Unified comms &amp; contact centre</small></a>
           <a href="service-network">Network &amp; Security <small>Connectivity, hardened</small></a>
@@ -53,8 +63,8 @@ window.VIS_HEADER = /* html */ `
         <a class="nav-link" data-nav="about" href="about">Company <span class="caret">&#9662;</span></a>
         <div class="dropdown-menu">
           <a href="about">About Us <small>Our story &amp; team</small></a>
-          <a href="global-presence">Global Presence <small>Where we operate</small></a>
           <a href="insights">Insights <small>Case studies &amp; awards</small></a>
+          <a href="insights#careers">Careers <small>Join the team</small></a>
           <a href="contact">Contact <small>Get in touch</small></a>
         </div>
       </li>

@@ -17,18 +17,27 @@
 /* ---- Top utility bar (Braiin / Nasdaq) ---- */
 .topbar { background: linear-gradient(90deg,#14142b,#3a0d1a); color: rgba(255,255,255,.82); font-size: .78rem; }
 .topbar-inner {
-  max-width: var(--container); margin: 0 auto; padding: 7px 24px;
+  max-width: var(--container); margin: 0 auto; padding: 6px 24px;
   display: flex; align-items: center; justify-content: space-between; gap: 16px;
 }
 .topbar strong { color: #fff; font-weight: 600; }
-.tb-left a { color: #fff; }
-.tb-left a:hover { text-decoration: underline; }
-.tb-left a:hover strong { color: #ffd0d8; }
-.tb-right { display: flex; align-items: center; gap: 20px; }
-.tb-right a { color: rgba(255,255,255,.82); transition: color .2s ease; }
+.tb-left { display: inline-flex; align-items: center; gap: 12px; min-width: 0; }
+.braiin-mark {
+  font-family: 'Space Grotesk','Poppins',sans-serif; font-weight: 700; font-size: .9rem;
+  letter-spacing: -.01em; color: #fff; line-height: 1; flex: none;
+  padding: 4px 10px; border-radius: 7px;
+  background: rgba(255,255,255,.12); border: 1px solid rgba(255,255,255,.22);
+}
+.braiin-mark:hover { background: rgba(255,255,255,.2); }
+.tb-sub { color: rgba(255,255,255,.82); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tb-right { display: flex; align-items: center; gap: 22px; flex: none; }
+.tb-right a { color: rgba(255,255,255,.85); transition: color .2s ease; }
 .tb-right a:hover { color: #fff; }
-.tb-loc { color: rgba(255,255,255,.6); }
-@media (max-width: 1040px) { .tb-loc { display: none; } }
+.tb-loc { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,.6); white-space: nowrap; }
+.tb-pin { width: 13px; height: 13px; flex: none; }
+@media (max-width: 1100px) { .tb-loc { display: none; } }
+@media (max-width: 820px)  { .tb-sub { display: none; } }
+@media (max-width: 940px)  { .topbar { display: none; } }
 @media (max-width: 940px) { .topbar { display: none; } }
 
 .nav {
@@ -111,6 +120,12 @@
 .dropdown-menu a:hover { background: var(--bg-soft); color: var(--red); padding-left: 19px; }
 .dropdown-menu a small { display: block; color: var(--muted); font-size: .78rem; font-weight: 400; margin-top: 2px; line-height: 1.35; }
 .dropdown-menu a:hover small { color: var(--ink-soft); }
+/* nested "sub-menu" group inside a dropdown */
+.dropdown-menu .dd-group { margin-top: 6px; padding-top: 8px; border-top: 1px solid var(--line); }
+.dropdown-menu .dd-label { display: block; font-size: .68rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--red); padding: 4px 15px 8px; }
+.dropdown-menu .dd-group a { padding-left: 28px; position: relative; }
+.dropdown-menu .dd-group a::before { content: ""; position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 5px; height: 5px; border-radius: 50%; background: var(--red); opacity: .5; }
+.dropdown-menu .dd-group a:hover::before { opacity: 1; }
 
 .nav-cta { display: flex; align-items: center; gap: 14px; }
 .nav-cta-mobile { display: none; }

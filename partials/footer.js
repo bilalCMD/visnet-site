@@ -49,9 +49,9 @@ window.VIS_FOOTER = /* html */ `
         <h4>Company</h4>
         <ul>
           <li><a href="about">About Us</a></li>
-          <li><a href="global-presence">Global Presence</a></li>
+          <li><a href="insights">Insights</a></li>
           <li><a href="/#about">Customer Stories</a></li>
-          <li><a href="contact">Careers</a></li>
+          <li><a href="insights#careers">Careers</a></li>
           <li><a href="contact">Contact</a></li>
         </ul>
       </div>
