@@ -35,9 +35,24 @@
 .tb-right a:hover { color: #fff; }
 .tb-loc { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,.6); white-space: nowrap; }
 .tb-pin { width: 13px; height: 13px; flex: none; }
-@media (max-width: 1250px) { .tb-loc { display: none; } }
-/* topbar only shows on real desktop (where the full nav fits); hamburger nav takes over below */
-@media (max-width: 1150px) { .topbar { display: none; } }
+/* tablet & mobile: compact, centered topbar — STILL shows the location pin (responsive) */
+@media (max-width: 1150px) {
+  .topbar-inner { justify-content: center; flex-wrap: wrap; gap: 4px 14px; padding: 6px 14px; font-size: .72rem; }
+  .tb-sub { display: none; }              /* drop the long subsidiary text, keep the logo */
+  .braiin-mark { padding: 3px 7px; }
+  .braiin-mark img { height: 14px; }
+  .tb-right { gap: 12px; }
+  .tb-pin { width: 12px; height: 12px; }
+}
+/* small phones: keep just the Braiin logo + location pin (Contact Us is in the menu/footer) */
+@media (max-width: 560px) {
+  .tb-right > a { display: none; }
+  .topbar-inner { gap: 4px 12px; }
+}
+@media (max-width: 380px) {
+  .topbar-inner { font-size: .66rem; }
+  .tb-pin { width: 11px; height: 11px; }
+}
 
 .nav {
   max-width: var(--container);
@@ -164,7 +179,7 @@
     align-items: stretch;
     gap: 0;
     background: #fff;
-    padding: 84px 24px 28px;        /* clears the fixed header bar */
+    padding: 100px 24px 28px;       /* clears the fixed topbar + nav bar */
     overflow-y: auto;
     /* fade in/out — NOT an off-screen slide (that caused horizontal page overflow) */
     opacity: 0; visibility: hidden; pointer-events: none;
