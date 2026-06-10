@@ -253,9 +253,19 @@
 .ip-badge { font-size: .66rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--red); background: var(--red-soft); padding: 5px 11px; border-radius: 999px; white-space: nowrap; }
 .ip-sub { display: block; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin-bottom: 14px; }
 .ip-card > p { color: var(--muted); font-size: .95rem; line-height: 1.6; margin-bottom: 18px; }
-.ip-check { display: grid; gap: 12px; }
-.ip-check li { position: relative; padding-left: 33px; font-size: .92rem; color: var(--ink-soft); line-height: 1.55; }
-.ip-check li::before { content: "✓"; position: absolute; left: 0; top: 1px; width: 23px; height: 23px; display: grid; place-items: center; border-radius: 50%; background: linear-gradient(135deg,var(--red),var(--red-dark)); color: #fff; font-size: .7rem; font-weight: 700; box-shadow: 0 4px 9px rgba(217,4,41,.3); }
+.ip-check { display: grid; gap: 3px; margin-top: 4px; }
+.ip-check li {
+  position: relative; padding: 10px 12px 10px 44px;
+  border-radius: 12px; font-size: .93rem; color: var(--ink-soft); line-height: 1.55;
+  transition: background .18s ease, transform .18s ease;
+}
+.ip-check li:hover { background: var(--bg-soft); transform: translateX(3px); }
+.ip-check li::before {
+  content: "✓"; position: absolute; left: 11px; top: 9px;
+  width: 24px; height: 24px; display: grid; place-items: center; border-radius: 50%;
+  background: linear-gradient(135deg,var(--red),var(--red-dark)); color: #fff;
+  font-size: .72rem; font-weight: 700; box-shadow: 0 4px 10px rgba(217,4,41,.3);
+}
 
 /* ---------- ML DIFFERENCE BAND ---------- */
 .ml-band {
