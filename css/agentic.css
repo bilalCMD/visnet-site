@@ -387,6 +387,28 @@
 .jcard.hot strong { color: #ff6b81; }
 .jcard.hot span { color: rgba(255,255,255,.82); }
 
+/* ---------- LEADERSHIP ---------- */
+.leadership { margin-top: 64px; padding-top: 48px; border-top: 1px solid var(--line); }
+.lead-head { text-align: center; margin-bottom: 38px; }
+.lead-title { font-family: 'Space Grotesk','Poppins',sans-serif; font-size: clamp(1.5rem,2.6vw,2rem); font-weight: 700; letter-spacing: -.01em; }
+.lead-title .accent { color: var(--red); }
+.lead-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 26px; }
+.lead-card {
+  text-align: center; background: #fff; border: 1px solid var(--line);
+  border-radius: 20px; padding: 32px 22px; box-shadow: var(--shadow);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.lead-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.lead-photo {
+  width: 112px; height: 112px; margin: 0 auto 18px; border-radius: 50%; overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 10px 24px rgba(20,20,43,.16), 0 0 0 1px var(--line), 0 0 0 7px var(--red-soft);
+  background: var(--bg-soft);
+}
+.lead-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.lead-card h3 { font-size: 1.12rem; }
+.lead-role { display: inline-block; margin-top: 7px; color: var(--red); font-weight: 600; font-size: .85rem; letter-spacing: .02em; }
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1000px) {
   .ai-hero-grid, .radius-sec, .moat-grid, .gp-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -395,6 +417,7 @@
   .ip-cards { grid-template-columns: 1fr; }
   .ml-grid { grid-template-columns: 1fr 1fr; }
   .prod-grid { grid-template-columns: 1fr; }
+  .lead-grid { grid-template-columns: 1fr 1fr; }
   .aip-grid, .oserv-grid, .story-grid { grid-template-columns: 1fr 1fr; }
   .adv-grid { grid-template-columns: 1fr 1fr; }
   .ai-statband { grid-template-columns: repeat(3,1fr); padding: 38px; }
