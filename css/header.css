@@ -167,11 +167,12 @@
     background: #fff;
     padding: 84px 24px 28px;        /* clears the fixed header bar */
     overflow-y: auto;
-    transform: translateX(100%);    /* hidden off-screen to the right */
-    transition: transform .38s cubic-bezier(.4,0,.2,1);
+    /* fade in/out — NOT an off-screen slide (that caused horizontal page overflow) */
+    opacity: 0; visibility: hidden; pointer-events: none;
+    transition: opacity .26s ease, visibility .26s ease;
     z-index: 1000;
   }
-  .nav-menu.open { transform: translateX(0); }
+  .nav-menu.open { opacity: 1; visibility: visible; pointer-events: auto; }
   .nav-menu li { border-bottom: 1px solid var(--line); }
   .nav-menu li:last-child { border-bottom: 0; }
   .nav-menu a.nav-link {
