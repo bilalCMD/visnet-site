@@ -104,14 +104,23 @@
 /* ---------- TRUST BAR ---------- */
 .ai-trustbar { padding: 40px 0; border-bottom: 1px solid var(--line); background: var(--bg); }
 .ai-trustbar p { text-align: center; color: var(--muted); font-size: .8rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 22px; }
-.ai-logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 22px 44px; }
-.ai-logos img {
-  height: 30px; width: auto; object-fit: contain;
-  filter: grayscale(1); opacity: .68;
-  transition: filter .25s ease, opacity .25s ease, transform .25s ease;
+/* scrolling logo marquee — the centred logo lights up in full colour */
+.ai-marquee {
+  position: relative; overflow: hidden; width: 100%;
+  -webkit-mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+          mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
-.ai-logos img:hover { filter: none; opacity: 1; transform: translateY(-2px); }
-@media (max-width: 600px) { .ai-logos { gap: 18px 28px; } .ai-logos img { height: 24px; } }
+.ai-mtrack { display: flex; align-items: center; gap: 56px; width: max-content; animation: aiMarquee 32s linear infinite; }
+.ai-marquee:hover .ai-mtrack { animation-play-state: paused; }
+.ai-mtrack img {
+  height: 30px; width: auto; object-fit: contain; flex: none;
+  filter: grayscale(1); opacity: .55;
+  transition: filter .35s ease, opacity .35s ease, transform .35s ease;
+}
+.ai-mtrack img.is-active { filter: none; opacity: 1; transform: scale(1.18); }
+@keyframes aiMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .ai-mtrack { animation: none; } }
+@media (max-width: 600px) { .ai-mtrack { gap: 38px; } .ai-mtrack img { height: 24px; } }
 
 /* ---------- generic check list (red) ---------- */
 .check-list { display: grid; gap: 12px; margin-top: 24px; }
