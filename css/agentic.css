@@ -107,6 +107,7 @@
 /* scrolling logo marquee — the centred logo lights up in full colour */
 .ai-marquee {
   position: relative; overflow: hidden; width: 100%;
+  padding: 20px 0;   /* vertical room so the scaled-up centred logo is never clipped */
   -webkit-mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
           mask: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
 }
@@ -116,8 +117,9 @@
   height: 30px; width: auto; object-fit: contain; flex: none;
   filter: grayscale(1); opacity: .55;
   transition: filter .35s ease, opacity .35s ease, transform .35s ease;
+  transform-origin: center;
 }
-.ai-mtrack img.is-active { filter: none; opacity: 1; transform: scale(1.18); }
+.ai-mtrack img.is-active { filter: none; opacity: 1; transform: scale(1.16); }
 @keyframes aiMarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .ai-mtrack { animation: none; } }
 @media (max-width: 600px) { .ai-mtrack { gap: 38px; } .ai-mtrack img { height: 24px; } }
