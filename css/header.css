@@ -27,17 +27,17 @@
 .topbar strong { color: #fff; font-weight: 700; }
 .tb-left { display: inline-flex; align-items: center; gap: 14px; min-width: 0; }
 .braiin-mark {
-  flex: none; display: inline-flex; align-items: center; line-height: 0;
-  padding: 7px 13px; border-radius: 9px; background: #fff;
+  flex: none; display: inline-flex; align-items: center; justify-content: center; line-height: 0;
+  height: 32px; padding: 0 13px; border-radius: 8px; background: #fff;
   box-shadow: 0 2px 12px rgba(0,0,0,.35); transition: transform .2s ease, box-shadow .2s ease;
 }
-.braiin-mark img { height: 24px; width: auto; display: block; object-fit: contain; }
+.braiin-mark img { height: 20px; width: auto; display: block; object-fit: contain; }
 .braiin-mark:hover { transform: translateY(-1px); box-shadow: 0 5px 16px rgba(0,0,0,.5); }
 .tb-sub { color: #fff; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .tb-nasdaq {
   flex: none; display: inline-flex; align-items: center; line-height: 1;
-  background: var(--red); color: #fff; font-weight: 700; font-size: .72rem; letter-spacing: .04em;
-  padding: 5px 12px; border-radius: 999px; box-shadow: 0 3px 10px rgba(217,4,41,.45);
+  height: 32px; background: var(--red); color: #fff; font-weight: 700; font-size: .72rem; letter-spacing: .04em;
+  padding: 0 14px; border-radius: 8px; box-shadow: 0 3px 10px rgba(217,4,41,.45);
   transition: background .2s ease, transform .2s ease;
 }
 .tb-nasdaq:hover { background: var(--red-dark); transform: translateY(-1px); }
