@@ -37,11 +37,12 @@ window.VIS_FOOTER = /* html */ `
       <div class="footer-col">
         <h4>Other Services</h4>
         <ul>
-          <li><a href="/#services">Technology Consulting</a></li>
-          <li><a href="/#services">Infra Services</a></li>
-          <li><a href="/#services">Managed Services &amp; Training</a></li>
-          <li><a href="/#services">Software Development Centre</a></li>
-          <li><a href="/#services">Telecom &amp; Networking</a></li>
+          <li><a href="service-collaboration">Collaboration &amp; CX</a></li>
+          <li><a href="service-network">Network &amp; Security</a></li>
+          <li><a href="service-av">Audio &amp; Video</a></li>
+          <li><a href="service-automation">Automation</a></li>
+          <li><a href="service-managed">Managed Services</a></li>
+          <li><a href="service-professional">Professional Services</a></li>
         </ul>
       </div>
 
