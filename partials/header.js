@@ -58,7 +58,7 @@ window.VIS_HEADER = /* html */ `
           <a href="service-av">Audio &amp; Video <small>AV integrations</small></a>
           <a href="service-automation">Automation <small>RPA &amp; workflows</small></a>
           <a href="service-managed">Managed Services <small>Run &amp; optimise</small></a>
-          <a href="/#services">Professional Services <small>Consulting, implementation &amp; training</small></a>
+          <a href="service-professional">Professional Services <small>Consulting, implementation &amp; training</small></a>
         </div>
       </li>
       <li class="nav-dropdown">
