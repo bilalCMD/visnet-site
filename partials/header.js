@@ -16,7 +16,7 @@ window.VIS_HEADER = /* html */ `
       </span>
       <span class="tb-right">
         <a href="contact">Contact Us</a>
-        <span class="tb-loc"><svg class="tb-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>India · Australia · UAE · Saudi Arabia</span>
+        <span class="tb-loc"><svg class="tb-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="tb-loc-full">India · USA · UK · UAE · Oman · Singapore · Malaysia · Philippines · Australia · Saudi Arabia</span><span class="tb-loc-sm">India · USA · UK · UAE · +6 more</span></span>
       </span>
     </div>
   </div>
@@ -67,6 +67,7 @@ window.VIS_HEADER = /* html */ `
           <a href="about">About Us <small>Our story &amp; team</small></a>
           <a href="global-presence">Global Presence <small>Where we operate</small></a>
           <a href="insights">Insights <small>Case studies &amp; awards</small></a>
+          <a href="careers">Careers <small>Join the team</small></a>
           <a href="contact">Contact <small>Get in touch</small></a>
         </div>
       </li>

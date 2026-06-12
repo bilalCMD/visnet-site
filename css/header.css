@@ -46,6 +46,10 @@
 .tb-right a:hover { color: #fff; }
 .tb-loc { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,.72); white-space: nowrap; }
 .tb-pin { width: 13px; height: 13px; flex: none; }
+/* full office list only on wide desktop; a compact version everywhere else */
+.tb-loc-full { display: none; }
+.tb-loc-sm { display: inline; }
+@media (min-width: 1300px) { .tb-loc-full { display: inline; } .tb-loc-sm { display: none; } }
 /* tablet & mobile: compact, centered topbar — STILL shows the Braiin logo + location pin */
 @media (max-width: 1150px) {
   .topbar-inner { justify-content: center; flex-wrap: wrap; gap: 5px 14px; padding: 8px 14px; font-size: .74rem; }
