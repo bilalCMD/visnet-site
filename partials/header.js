@@ -11,7 +11,8 @@ window.VIS_HEADER = /* html */ `
     <div class="topbar-inner">
       <span class="tb-left">
         <a class="braiin-mark" href="https://braiin.com/" target="_blank" rel="noopener" aria-label="Braiin Limited"><img src="images/braiin-logo.webp" alt="Braiin"></a>
-        <span class="tb-sub">A subsidiary of <strong>Braiin Limited</strong> · Nasdaq: <strong>BRAI</strong></span>
+        <span class="tb-sub">A subsidiary of <strong>Braiin Limited</strong></span>
+        <a class="tb-nasdaq" href="https://braiin.com/" target="_blank" rel="noopener">Nasdaq: BRAI</a>
       </span>
       <span class="tb-right">
         <a href="contact">Contact Us</a>
@@ -57,14 +58,15 @@ window.VIS_HEADER = /* html */ `
           <a href="service-av">Audio &amp; Video <small>AV integrations</small></a>
           <a href="service-automation">Automation <small>RPA &amp; workflows</small></a>
           <a href="service-managed">Managed Services <small>Run &amp; optimise</small></a>
+          <a href="/#services">Professional Services <small>Consulting, implementation &amp; training</small></a>
         </div>
       </li>
       <li class="nav-dropdown">
         <a class="nav-link" data-nav="about" href="about">Company <span class="caret">&#9662;</span></a>
         <div class="dropdown-menu">
           <a href="about">About Us <small>Our story &amp; team</small></a>
+          <a href="global-presence">Global Presence <small>Where we operate</small></a>
           <a href="insights">Insights <small>Case studies &amp; awards</small></a>
-          <a href="insights#careers">Careers <small>Join the team</small></a>
           <a href="contact">Contact <small>Get in touch</small></a>
         </div>
       </li>
