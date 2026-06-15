@@ -30,6 +30,7 @@ window.VIS_HEADER = /* html */ `
     </button>
 
     <ul class="nav-menu" id="navMenu">
+      <li><a class="nav-link" data-nav="home" href="/">Home</a></li>
       <li class="nav-dropdown">
         <a class="nav-link" data-nav="radius" href="radius">CX Agentic AI <span class="caret">&#9662;</span></a>
         <div class="dropdown-menu">
