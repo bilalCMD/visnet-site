@@ -8,7 +8,7 @@ window.VIS_FOOTER = /* html */ `
     <div class="footer-top">
       <div class="footer-brand">
         <img src="images/logo.png" alt="VIS Networks">
-        <p>An AI-powered omnichannel Agentic AI Contact Center Solutions and Software Company.</p>
+        <p>An AI-powered Omnichannel System Integrator and Software Company.</p>
         <div class="footer-social">
           <a href="https://www.linkedin.com/company/vis-networks" target="_blank" rel="noopener" aria-label="LinkedIn">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
@@ -23,14 +23,21 @@ window.VIS_FOOTER = /* html */ `
       </div>
 
       <div class="footer-col">
-        <h4>Platform</h4>
+        <h4>CX Agentic AI</h4>
         <ul>
-          <li><a href="radius">Agentic AI Contact Centers</a></li>
-          <li><a href="radius">Radius</a></li>
-          <li><a href="flamingo">Flamingo AI</a></li>
+          <li><a href="radius">Radius — Agentic AI Contact Center</a></li>
           <li><a href="ai-engage">AI Engage</a></li>
           <li><a href="ai-assist">AI Assist</a></li>
-          <li><a href="ai-insight">AI Insight</a></li>
+          <li><a href="ai-insight">AI Insights</a></li>
+          <li><a href="flamingo">Flamingo AI — Patented Technology</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="products#digon">DiGON</a></li>
+          <li><a href="products#cube">Cube</a></li>
         </ul>
       </div>
 
@@ -50,7 +57,6 @@ window.VIS_FOOTER = /* html */ `
         <h4>Company</h4>
         <ul>
           <li><a href="about">About Us</a></li>
-          <li><a href="global-presence">Global Presence</a></li>
           <li><a href="insights">Insights</a></li>
           <li><a href="careers">Careers</a></li>
           <li><a href="contact">Contact</a></li>
@@ -60,6 +66,6 @@ window.VIS_FOOTER = /* html */ `
   </div>
   <div class="footer-bottom">
     <span>&copy; <span id="year"></span> VIS Networks. All rights reserved. A subsidiary of Braiin Limited · Nasdaq: BRAI</span>
-    <span>India &middot; Australia &middot; UAE &middot; Saudi Arabia</span>
+    <span>India &middot; Australia &middot; UAE &middot; Oman &middot; Singapore &middot; Malaysia &middot; Philippines &middot; UK &middot; USA</span>
   </div>
 </footer>`;

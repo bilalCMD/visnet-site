@@ -66,7 +66,6 @@ window.VIS_HEADER = /* html */ `
         <a class="nav-link" data-nav="about" href="about">Company <span class="caret">&#9662;</span></a>
         <div class="dropdown-menu">
           <a href="about">About Us <small>Our story &amp; team</small></a>
-          <a href="global-presence">Global Presence <small>Where we operate</small></a>
           <a href="insights">Insights <small>Case studies &amp; awards</small></a>
           <a href="careers">Careers <small>Join the team</small></a>
           <a href="contact">Contact <small>Get in touch</small></a>
