@@ -299,6 +299,7 @@
 
 /* ---------- OUR PRODUCTS ---------- */
 .prod-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; }
+.prod-grid--2 { grid-template-columns: repeat(2,1fr); max-width: 760px; margin-left: auto; margin-right: auto; }
 .prod-card {
   display: block; position: relative; background: #fff; border: 1px solid var(--line);
   border-radius: 20px; padding: 32px 30px; box-shadow: var(--shadow);
